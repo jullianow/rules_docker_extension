@@ -4,8 +4,7 @@ def _impl(
         ctx,
         name = None,
         image = None,
-        docker_run_flags = None,
-        output_image_tar = None):
+        docker_run_flags = None):
     """Implementation for the container_run_and_commit rule.
     This rule runs a set of commands in a given image, waits for the commands
     to finish, and then commits the container to a new image.
